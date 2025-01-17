@@ -1,0 +1,40 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    font-family: 'Helvetica', sans-serif; /* Use Helvetica font */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center-justify text */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* General Text Styling */
+h1, h2, h3, p, a {
+    margin-bottom: 20px; /* Spacing between text elements */
+}
+
+a {
+    color: white; /* White links */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Container for Content */
+.container {
+    width: 80%; /* Width for content */
+    max-width: 800px; /* Limit max width for better readability */
+    margin: auto;
+}
