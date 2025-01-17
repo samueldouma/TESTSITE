@@ -38,3 +38,25 @@ a:hover {
     max-width: 800px; /* Limit max width for better readability */
     margin: auto;
 }
+
+/* Grid Layout for Links */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grid a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: #222; /* Optional: Add a background for each link */
+    border-radius: 5px; /* Optional: Rounded corners */
+    transition: background-color 0.3s;
+}
+
+.grid a:hover {
+    background-color: #444; /* Optional: Highlight effect on hover */
+}
