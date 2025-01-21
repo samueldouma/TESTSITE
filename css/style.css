@@ -15,11 +15,16 @@ body {
     align-items: center; /* Center vertically */
     text-align: center; /* Center-justify text */
     height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Prevent scrolling */
+    overflow: auto; /* Allow scrolling for longer pages */
 }
 
 /* General Text Styling */
-h1, h2, h3, p, a {
+h1 {
+    font-size: 3rem; /* Larger header size */
+    margin-bottom: 40px; /* Space below the header */
+}
+
+h2, h3, p, a {
     margin-bottom: 20px; /* Spacing between text elements */
 }
 
@@ -42,19 +47,19 @@ a:hover {
 /* Grid Layout for Links */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Dynamic grid layout */
+    gap: 30px; /* Increase space between grid items */
+    margin-top: 20px; /* Add space above the grid */
 }
 
 .grid a {
-    text-decoration: none;
-    color: white;
+    font-size: 1.2rem; /* Larger link text */
+    letter-spacing: 1px; /* Add spacing between letters */
     text-align: center;
-    padding: 10px;
+    padding: 15px; /* Increase padding around text */
     background-color: #222; /* Optional: Add a background for each link */
     border-radius: 5px; /* Optional: Rounded corners */
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 .grid a:hover {
