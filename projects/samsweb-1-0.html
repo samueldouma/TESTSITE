@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>samsweb-1-0</title>
+    <title>samsweb-1.0</title>
     <link rel="stylesheet" href="../css/style.css">
     <style>
         body {
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             background-color: black;
             color: white;
             font-family: 'Helvetica', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            overflow: hidden;
         }
+
         .title {
-            margin-bottom: 20px;
             text-align: center;
             font-size: 2rem;
+            margin: 20px 0;
         }
+
         .video-container {
             position: relative;
             width: 100%;
-            height: 100%;
+            height: calc(100% - 80px); /* Leave space for the title */
             overflow: hidden;
         }
+
         .video-container iframe {
             position: absolute;
             top: 0;
@@ -39,7 +43,7 @@
     </style>
 </head>
 <body>
-    <div class="title">samsweb-1-0/div>
+    <div class="title">samsweb-1.0 </div>
     <div class="video-container">
         <iframe src="https://www.youtube.com/embed/cOTgEFpbs3I?start=119" allowfullscreen></iframe>
     </div>
