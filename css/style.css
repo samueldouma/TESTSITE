@@ -11,57 +11,63 @@ body {
     color: white; /* White text */
     font-family: 'Helvetica', sans-serif; /* Use Helvetica font */
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    text-align: center; /* Center-justify text */
-    height: 100vh; /* Full viewport height */
-    overflow: auto; /* Allow scrolling for longer pages */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Ensure the full screen is covered */
+    overflow: auto; /* Allow scrolling if needed */
 }
 
-/* General Text Styling */
+/* Top Links Styling */
+.top-links {
+    margin-bottom: 20px;
+}
+
+.top-links a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.top-links a:hover {
+    color: #888; /* Optional hover color for top links */
+}
+
+/* Header Styling */
 h1 {
-    font-size: 3rem; /* Larger header size */
-    margin-bottom: 40px; /* Space below the header */
+    font-size: 3rem; /* Larger title size */
+    margin-bottom: 40px; /* Add space below the title */
 }
 
-h2, h3, p, a {
-    margin-bottom: 20px; /* Spacing between text elements */
-}
-
-a {
-    color: white; /* White links */
-    text-decoration: none; /* Remove underline */
-}
-
-a:hover {
-    text-decoration: underline; /* Add underline on hover */
-}
-
-/* Container for Content */
-.container {
-    width: 80%; /* Width for content */
-    max-width: 800px; /* Limit max width for better readability */
-    margin: auto;
-}
-
-/* Grid Layout for Links */
+/* Grid Styling */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Dynamic grid layout */
-    gap: 30px; /* Increase space between grid items */
-    margin-top: 20px; /* Add space above the grid */
+    gap: 30px; /* Space between grid items */
+    margin-top: 20px;
+    justify-content: center; /* Center grid content */
 }
 
+/* Circle Link Styling */
 .grid a {
-    font-size: 1.2rem; /* Larger link text */
-    letter-spacing: 1px; /* Add spacing between letters */
+    display: inline-block;
+    width: 100px; /* Circle size */
+    height: 100px; /* Circle size */
+    line-height: 100px; /* Vertically center text inside the circle */
+    border: 2px solid white; /* White border for the circle */
+    border-radius: 50%; /* Makes the link a circle */
     text-align: center;
-    padding: 15px; /* Increase padding around text */
-    background-color: #222; /* Optional: Add a background for each link */
-    border-radius: 5px; /* Optional: Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    color: white;
+    text-decoration: none;
+    background-color: black; /* Black fill */
+    font-size: 1rem;
+    transition: all 0.3s ease; /* Smooth transition */
 }
 
 .grid a:hover {
-    background-color: #444; /* Optional: Highlight effect on hover */
+    background-color: white; /* Invert fill color */
+    color: black; /* Invert text color */
+    border-color: black; /* Invert border color */
 }
