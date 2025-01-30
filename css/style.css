@@ -7,15 +7,39 @@
 
 /* Body Styling */
 body {
-    background-color: black; /* Black background */
-    color: white; /* White text */
-    font-family: 'Helvetica', sans-serif; /* Use Helvetica font */
+    background-color: #666; /* Adjusted to match the embedded audio player's default look */
+    color: white;
+    font-family: 'Helvetica', sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 100vh; /* Ensure the full screen is covered */
-    overflow: auto; /* Allow scrolling if needed */
+    min-height: 100vh;
+    overflow: auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Media Container Styling */
+.media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* iFrame Styling */
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
 }
 
 /* Top Links Styling */
@@ -32,42 +56,36 @@ body {
 }
 
 .top-links a:hover {
-    color: #888; /* Optional hover color for top links */
+    color: #888;
 }
 
-/* Header Styling */
-h1 {
-    font-size: 3rem; /* Larger title size */
-    margin-bottom: 40px; /* Add space below the title */
-}
-
-/* Grid Styling */
+/* Grid Layout for Any Future Elements */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Dynamic grid layout */
-    gap: 30px; /* Space between grid items */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
     margin-top: 20px;
-    justify-content: center; /* Center grid content */
+    justify-content: center;
 }
 
-/* Circle Link Styling */
+/* Circular Link Buttons */
 .grid a {
     display: inline-block;
-    width: 100px; /* Circle size */
-    height: 100px; /* Circle size */
-    line-height: 100px; /* Vertically center text inside the circle */
-    border: 2px solid white; /* White border for the circle */
-    border-radius: 50%; /* Makes the link a circle */
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
     text-align: center;
     color: white;
     text-decoration: none;
-    background-color: black; /* Black fill */
+    background-color: black;
     font-size: 1rem;
-    transition: all 0.3s ease; /* Smooth transition */
+    transition: all 0.3s ease;
 }
 
 .grid a:hover {
-    background-color: white; /* Invert fill color */
-    color: black; /* Invert text color */
-    border-color: black; /* Invert border color */
+    background-color: white;
+    color: black;
+    border-color: black;
 }
